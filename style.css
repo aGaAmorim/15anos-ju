@@ -46,3 +46,31 @@ body {
   font-weight: 600;
   font-size: 1rem;
 }
+
+.form-convite {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.form-convite label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.form-convite input {
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.small-text {
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  text-align: center;
+}
+
