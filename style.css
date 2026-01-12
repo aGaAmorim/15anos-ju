@@ -12,7 +12,8 @@ body {
   padding: 1.5rem;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 4.5rem;
 }
 
 .overlay {
