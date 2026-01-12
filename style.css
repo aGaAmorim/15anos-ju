@@ -3,22 +3,46 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: url("assets/images/noite-estrelada.webp") center / cover no-repeat;
   min-height: 100vh;
+  color: #ffffff;
 }
+
 .container {
   max-width: 420px;
   margin: auto;
   padding: 1.5rem;
-}
-.overlay {
-  background: rgba(0, 0, 0, 0.55);
-  border-radius: 16px;
-  padding: 1.5rem;
-}
-button {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 0.75rem;
-  font-size: 1rem;
-  border-radius: 12px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.subtitle {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.info {
+  margin: 1.25rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  display: block;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
