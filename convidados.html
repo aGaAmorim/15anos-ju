@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Convite ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <section class="overlay">
+
+      <h1 id="familia"></h1>
+
+      <ul id="lista"></ul>
+
+    </section>
+  </main>
+
+  <script src="js/dados.js"></script>
+  <script>
+    const codigo = localStorage.getItem("codigoConvite");
+    const dados = convites[codigo];
+
+    if (!dados) {
+      window.location.href = "convite.html";
+    }
+
+    document.getElementById("familia").innerText = dados.familia;
+
+    const lista = document.getElementById("lista");
+    dados.convidados.forEach(nome => {
+      const li = document.createElement("li");
+      li.innerText = nome;
+      lista.appendChild(li);
+    });
+  </script>
+</body>
+</html>
