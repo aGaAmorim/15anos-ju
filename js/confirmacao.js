@@ -19,7 +19,7 @@ dados.convidados.forEach(nome => {
     <span class="nome">${nome}</span>
 
     <div class="acoes">
-      <button class="btn-confirmar">Oba, eu vou 🎉</button>
+      <button class="btn-confirmar">Eu vou 🎉</button>
       <button class="btn-recusar">Não vou 😢</button>
     </div>
   `;
