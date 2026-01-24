@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seu Convite ✨</title>
+  <title>Confirmação ✨</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,29 +12,17 @@
     <section class="overlay">
 
       <h1 id="familia"></h1>
+      <p class="subtitle">
+        Confirme a presença de cada convidado 💙  
+        Pedimos a gentileza de confirmar apenas os nomes listados.
+      </p>
 
-      <ul id="lista"></ul>
+      <div id="lista-convidados"></div>
 
     </section>
   </main>
 
   <script src="js/dados.js"></script>
-  <script>
-    const codigo = localStorage.getItem("codigoConvite");
-    const dados = convites[codigo];
-
-    if (!dados) {
-      window.location.href = "convite.html";
-    }
-
-    document.getElementById("familia").innerText = dados.familia;
-
-    const lista = document.getElementById("lista");
-    dados.convidados.forEach(nome => {
-      const li = document.createElement("li");
-      li.innerText = nome;
-      lista.appendChild(li);
-    });
-  </script>
+  <script src="js/confirmacao.js"></script>
 </body>
 </html>
