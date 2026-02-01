@@ -8,7 +8,7 @@ body {
 
 .container {
   max-width: 420px;
-  margin: auto;
+  margin-top: 800px;
   padding: 1.5rem;
   min-height: 100vh;
   display: flex;
