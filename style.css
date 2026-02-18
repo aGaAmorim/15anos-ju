@@ -49,6 +49,18 @@ body {
 
 }
 
+@media (min-width: 768px) {
+  .hero-img {
+    object-position: center 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-img {
+    object-fit: contain;
+  }
+}
+
 .container {
   max-width: 420px;
   margin-top: 800px;
