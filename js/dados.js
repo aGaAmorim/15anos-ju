@@ -2,10 +2,10 @@ const convites = {
   "JU-FAM-001": {
     familia: "Família Amorim",
     convidados: [
-      "Gabriela Amorim",
-      "Julia Amorim",
-      "Teo Amorim",
-      "Kiara Amorim"
+      "Gah Amorim",
+      "Ju Amorim",
+      "Teteo Amorim",
+      "Kiki Amorim"
     ]
   },
   "JU-FAM-002": {
