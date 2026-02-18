@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #0b1a2a;
+  background: url("assets/images/noite-estrelada-new.webp") center top / cover no-repeat fixed;
+  min-height: 100vh;
   color: #ffffff;
 }
 
