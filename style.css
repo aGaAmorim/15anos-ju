@@ -35,6 +35,19 @@ body {
   background: rgba(0,0,0,0.35);
 }
 
+@media (min-width: 1024px) {
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-img {
+    object-fit: contain;
+    object-position: center;
+    background-color: #0b1a2a;
+  }
+
+}
 
 .container {
   max-width: 420px;
