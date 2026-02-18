@@ -1,18 +1,8 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: url("assets/images/noite-estrelada-new.webp") center top / cover no-repeat;
-  background-position: center 20%;
-  min-height: 100vh;
+  background-color: #0b1a2a;
   color: #ffffff;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 0;
 }
 
 .container {
