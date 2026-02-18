@@ -5,7 +5,8 @@ const convites = {
       "Gah Amorim",
       "Ju Amorim",
       "Teteo Amorim",
-      "Kiki Amorim"
+      "Kiki Amorim",
+      "Felipe Neto"
     ]
   },
   "JU-FAM-002": {
