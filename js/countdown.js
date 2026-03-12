@@ -1,4 +1,4 @@
-const dataFesta = new Date("2026-12-11T20:00:00").getTime();
+const dataFesta = new Date("2026-12-11T19:00:00").getTime();
 
 function atualizarContagem() {
 
