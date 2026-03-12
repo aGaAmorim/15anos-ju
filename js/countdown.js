@@ -1,4 +1,4 @@
-const dataFesta = new Date("2026-12-11T20:00:00").getTime();
+const dataFesta = new Date("2026-12-11T19:00:00").getTime();
 
 function atualizarContagem() {
 
@@ -10,9 +10,10 @@ function atualizarContagem() {
   const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
   const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
-  document.getElementById("timer").innerHTML =
-    `${dias} dias • ${horas}h • ${minutos}min • ${segundos}s`;
-
+  document.getElementById("dias").innerText = dias;
+  document.getElementById("horas").innerText = horas;
+  document.getElementById("minutos").innerText = minutos;
+  document.getElementById("segundos").innerText = segundos;
 }
 
 setInterval(atualizarContagem, 1000);
