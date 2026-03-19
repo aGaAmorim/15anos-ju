@@ -9,6 +9,9 @@ function validarCodigo(event) {
     window.location.href = "convidados.html";
   } else {
     mostrarErro("Código inválido 😕");
-  }
-  
+  }  
+}
+
+function mostrarErro(msg) {
+  document.getElementById("erro").innerText = msg;
 }
