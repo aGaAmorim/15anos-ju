@@ -153,6 +153,31 @@ body {
   margin-top: - 8px;
 }
 
+.acoes {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn-input {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2); /* igual input */
+  backdrop-filter: blur(5px); /* efeito vidro */
+  color: white;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.btn-input:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
 .small-text {
   margin-top: 1.25rem;
   font-size: 0.8rem;
