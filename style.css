@@ -116,7 +116,7 @@ body {
 }
 
 .time-box{
-  background:rgba(0,0,0,0.55);
+  background:rgba(0 0 0 / 4%);
   padding:08px 08px;
   border-radius:12px;
   min-width:60px;
