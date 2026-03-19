@@ -1,13 +1,16 @@
-function validarCodigo() {
+function validarCodigo(event) {
+  event.preventDefault();
+  
   const codigo = document.getElementById("codigo").value.trim().toUpperCase();
   const erro = document.getElementById("erro");
 
-  if (!convites[codigo]) {
-    erro.innerText = "Código inválido. Verifique e tente novamente 💙";
+  if (!codigo) {
+    alert("Digite o código do convite 💙");
     return;
   }
-
-  // salva o código e redireciona
-  localStorage.setItem("codigoConvite", codigo);
-  window.location.href = "convidados.html";
+  if (codigo === "JU123") {
+    window.location.href = "confirmacao.html?codigo=" + codigo;
+  } else {
+    alert("Código inválido 😕");
+  }
 }
