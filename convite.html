@@ -21,7 +21,7 @@
                     Digite abaixo o código recebido no seu convite para acessar os detalhes e confirmar presença.
                 </p>
 
-                <form class="form-convite">
+                <form class="form-convite" onsubmit="validarCodigo(event)">
                     <label for="codigo"> Código do convite </label>
 
                     <input
@@ -31,17 +31,17 @@
                         placeholder="Ex: JU=FAM-001"
                         required
                     />
+                    <button type="submit" class="btn-primary"> Acessar meu convite </button>
 
-                    <form class="form-convite" onsubmit="validarCodigo" (event)>
-                        <button type="submit" class="btn-primary"> Acessar meu convite </button>
-                        <p id="erro" class="erro"></p>
-                        <a href="index.html" class="btn-primary"> Voltar </a>
-                    </form>
-
-                    <p class="small-text">
-                        Caso tenha recebido este convite mas não possua o código, entre em contato com a família da Ju.
-                    </p>
+                    <p id="erro" class="erro"></p>
+                    
+                    <a href="index.html" class="btn-primary"> Voltar </a>
                 </form>
+
+                <p class="small-text">
+                    Caso tenha recebido este convite mas não possua o código, entre em contato com a família da Ju.
+                </p>
+               
             </section>
         </main>
         <script scr="js/dados.js"></script>
