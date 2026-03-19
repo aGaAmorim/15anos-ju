@@ -3,7 +3,7 @@ function acessarConvite() {
 
   if (CONVITES[codigo]) {
     localStorage.setItem("convite", codigo);
-    window.location.href = "confirmacao.html";
+    window.location.href = "convidados.html";
   } else {
     document.getElementById("erro").innerText = "Código inválido. Verifique e tente novamente.";
   }
