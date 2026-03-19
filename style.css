@@ -115,25 +115,30 @@ body {
 }
 
 .input-busca {
-  display: flex;
-  align-items: stretch;
-  gap: 0.5rem;
   position: relative;
 }
 
 .input-busca input {
-  flex: 1;
   width: 100%;
-  padding-right: 3rem;
+  padding: 0.9rem;
+  padding-right: 3rem; /* espaço da lupa */
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
 }
 
 .btn-lupa {
   position: absolute;
-  right: 5px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 
   background: transparent;
+  border: none;
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  color: white;
 }
 
 .small-text {
