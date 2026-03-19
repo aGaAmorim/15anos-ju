@@ -63,7 +63,7 @@ body {
 
 .container {
   max-width: 420px;
-  margin-top: 800px;
+  margin: auto;
   padding: 1.5rem;
   min-height: 100vh;
   display: flex;
@@ -95,7 +95,7 @@ body {
 
 .btn-primary {
   display: block;
-  margin-top: 30rem;
+  margin-top: 2rem;
   padding: 1rem;
   border-radius: 14px;
   background: #ffffff;
