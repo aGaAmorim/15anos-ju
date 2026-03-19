@@ -6,7 +6,7 @@ body {
   color: #ffffff;
 
   background: url("assets/images/newSite.webp") center top no-repeat;
-  background-size: 100% auto;
+  /*background-size: 100% auto;*/
 }
 
 .titleConvite{
