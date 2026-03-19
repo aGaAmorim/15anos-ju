@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: url("assets/images/newSite.webp") center top / cover no-repeat;
+  background: url("assets/images/newSite_1080x1920.webp") center top / cover no-repeat;
+  /*background: url("assets/images/newSite.webp") center top / cover no-repeat;*/
   min-height: 100vh;
   color: #ffffff;
 
