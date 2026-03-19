@@ -119,7 +119,7 @@ body {
 }
 
 .input-busca input {
-  width: 100%;
+  width: 80%;
   padding: 0.9rem;
   padding-right: 3rem; /* espaço da lupa */
   border-radius: 10px;
@@ -132,13 +132,12 @@ body {
   right: 10px;
   top: 50%;
   transform: translateY(-50%);
-
   background: transparent;
   border: none;
   cursor: pointer;
-
   font-size: 1.2rem;
   color: white;
+  margin-top: - 8px;
 }
 
 .small-text {
