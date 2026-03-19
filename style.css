@@ -6,8 +6,6 @@ body {
   color: #ffffff;
 }
 
-
-
 .container {
   max-width: 420px;
   margin: auto;
@@ -18,7 +16,6 @@ body {
   position: relative;
   z-index: 1;
 }
-
 
 .overlay {
   background: rgba(0, 0, 0, 0.55);
@@ -32,7 +29,7 @@ body {
   margin-top: 0.85rem;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-family: 'Dancing Script', cursive;
   text-align: center;
 }
 
