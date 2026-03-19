@@ -6,7 +6,7 @@ function validarCodigo(event) {
 
   if (convites[codigo]) {
     localStorage.setItem("codigoConvite", codigo);
-    window.location.href = "confirmacao.html";
+    window.location.href = "convidados.html";
   } else {
     mostrarErro("Código inválido 😕");
   }
