@@ -4,13 +4,11 @@ function validarCodigo(event) {
   const codigo = document.getElementById("codigo").value.trim().toUpperCase();
   const erro = document.getElementById("erro");
 
-  if (!codigo) {
-    alert("Digite o código do convite 💙");
-    return;
-  }
-  if (codigo === "JU123") {
-    window.location.href = "confirmacao.html?codigo=" + codigo;
+  if (convites[codigo]) {
+    localStorage.setItem("codigoConvite", codigo);
+    window.location.href = "confirmacao.html";
   } else {
-    alert("Código inválido 😕");
+    mostrarErro("Código inválido 😕");
   }
+  
 }
