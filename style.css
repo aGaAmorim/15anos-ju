@@ -29,10 +29,11 @@ body {
 }
 
 .subtitle {
-  margin-top: 0.75rem;
+  margin-top: 0.85rem;
   font-size: 1rem;
   line-height: 1.4;
   font-family: Brush Script MT, Brush Script Std, cursive;
+  text-align: center;
 }
 
 .info {
