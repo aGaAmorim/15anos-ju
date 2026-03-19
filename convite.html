@@ -24,14 +24,20 @@
                 <form class="form-convite" onsubmit="validarCodigo(event)">
                     <label for="codigo"> Código do convite </label>
 
-                    <input class="time-box btn-convite"
+                    <div class="input-busca">
+                      <input
+                        class="time-box btn-convite"
                         type="text"
                         id="codigo"
                         name="codigo"
                         placeholder="Ex: JU-FAM-001"
                         required
-                    />
-                    <button type="submit" class="btn-primary"> Acessar meu convite </button>
+                      />
+                    
+                      <button type="submit" class="btn-lupa">
+                        🔍
+                      </button>
+                    </div>
 
                     <p id="erro" class="erro"></p>
                     
