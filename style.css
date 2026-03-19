@@ -113,7 +113,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: #FFFFFF;
 }
-
+/*
 .input-busca {
   display: flex;
   align-items: center;
@@ -122,7 +122,7 @@ body {
 
 .input-busca input {
   flex: 1;
-}
+}*/
 
 .btn-lupa {
   padding: 0.9rem;
