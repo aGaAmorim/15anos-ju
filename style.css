@@ -111,6 +111,7 @@ body {
 
 .form-convite input::placeholder {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #999;
 }
 
 .small-text {
