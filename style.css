@@ -25,6 +25,15 @@ body {
   text-align: center;
 }
 
+.overlay-box {
+  background: rgba(0,0,0,0.55);
+  border-radius: 16px;
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
 .subtitle {
   margin-top: 0.85rem;
   font-size: clamp(1.8rem, 5vw, 2.5rem);
