@@ -164,3 +164,9 @@ body {
   text-transform: uppercase;
 }
 
+.erro {
+  margin-top: 10px;
+  color: #ffb3b3;
+  font-size: 0.9rem;
+}
+
