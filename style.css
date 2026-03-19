@@ -6,6 +6,19 @@ body {
   color: #ffffff;
 }
 
+.titleConvite{
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  line-height: 1.4;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-weight: 600;
+  color: #f5f7ff;
+  letter-spacing: 1px;
+  text-shadow: 
+    0 0 6px rgba(255,255,255,0.5),
+    0 0 12px rgba(255,255,255,0.3);
+}
+
 .container {
   max-width: 420px;
   margin: auto;
