@@ -109,6 +109,10 @@ body {
   font-size: 1rem;
 }
 
+.form-convite input::placeholder {
+  font-family: sans-serif;
+}
+
 .small-text {
   margin-top: 1.25rem;
   font-size: 0.8rem;
