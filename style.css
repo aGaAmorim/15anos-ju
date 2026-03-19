@@ -57,12 +57,28 @@ body {
   font-size: 1rem;
 }
 
+/*acessar convite*/
 .meuConvite {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
-  font-color: white;
 }
+
+.btn-convite {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  padding: 12px 16px;
+  transition: all 0.2s ease;
+}
+
+.btn-convite:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.15);
+}
+/*acessar convite*/
 
 .form-convite {
   margin-top: 1.5rem;
