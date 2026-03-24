@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confirmação ✨</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<body>
-  <main class="container">
-        <section class="overlay">
+        <title> Confirmação ✨ </title>
+        
+        <meta name="robots" content="noindex,nofollow"/>
 
-          <h1 id="familia"></h1>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    </head>
 
-          <p class="subtitle">
-            Confirme a presença de cada convidado 💙  
-            Pedimos a gentileza de confirmar apenas os nomes listados.
-          </p>
+    <body>
+        <script src="js/dados.js"></script>
+        <script src="js/confirmacao.js"></script>
+        <script src="js/countdown.js"></script>
 
-          <div id="lista-convidados"></div>
+        <p class="subtitle">
+                Preparem-se!
+        </p>
 
-        </section>
-      </main>
+        <div class="countdown">
 
+            <div class="time-box">
+                <span id="dias">0</span>
+                <p>dias</p>
+            </div>
 
+            <div class="time-box">
+                <span id="horas">0</span>
+                <p>horas</p>
+            </div>
 
-  <script src="js/dados.js"></script>
-  <script src="js/confirmacao.js"></script>
+            <div class="time-box">
+                <span id="minutos">0</span>
+                <p>min</p>
+            </div>
 
-</body>
+            <div class="time-box">
+                <span id="segundos">0</span>
+                <p>seg</p>
+            </div>
+
+        </div>
+
+        <main class="container">
+            <section class="overlay overlay-box">
+
+                <h1 class="titleConvite" id="familia"> Confirmação ✨</h1>
+
+                <p>
+                    Listamos abaixo os convidados de sua família. Pedimos a gentileza de marcar Sim ou Não para cada convidado 💙
+                    Teremos lista de confirmação na entrada da festa. 
+                </p>
+
+                <div id="lista-convidados"></div>
+
+            </section>
+        </main>
+
+    </body>
 </html>
