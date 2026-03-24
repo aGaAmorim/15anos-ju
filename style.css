@@ -44,7 +44,8 @@ body {
 }
 
 .overlay-box {
-  background: rgba(0 0 0 / 4%);
+  /*background: rgba(0 0 0 / 4%);*/
+  background: #A6CFEA;
   border-radius: 16px;
   padding: 1.5rem;
   backdrop-filter: blur(4px);
