@@ -1,13 +1,14 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: url("assets/images/newSite_1080x1920.webp") center top / cover no-repeat;
-  /*background: url("assets/images/newSite.webp") center top / cover no-repeat;*/
+  
+  background-image: url("assets/images/newSite.webp");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   min-height: 100vh;
   color: #ffffff;
-
-  /*background: url("assets/images/newSite.webp") center top no-repeat;*/
-  /*background-size: 100% auto;*/
 }
 
 .titleConvite{
@@ -296,8 +297,20 @@ body {
 
 }
 
+@media (max-width: 1023px) {
+  body {
+    background-image: url("assets/images/newSite.webp");
+  }
+}
+
 /*notebook*/
 @media (min-width: 1024px) {
+
+  body {
+    background-image: url("assets/images/newSiteDesktop.webp");
+    background-position: center center;
+    background-size: cover;
+  }
 
   .container {
     max-width: 650px;
