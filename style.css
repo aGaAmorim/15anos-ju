@@ -93,7 +93,10 @@ body {
 .meuConvite {
   margin-top: 3rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  /*justify-content: center;*/
 }
 
 .btn-convite {
