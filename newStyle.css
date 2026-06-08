@@ -58,24 +58,17 @@ body{
 .titleConvite{
 
   font-family:'Dancing Script',cursive;
-
   font-size:clamp(4rem,9vw,8rem);
-
   font-weight:500;
-
   color:#f4d28c;
-
   line-height:1;
 }
 
 .hero-subtitle{
 
   margin-top:1rem;
-
   text-transform:uppercase;
-
   letter-spacing:8px;
-
   font-size:1.3rem;
 }
 
@@ -83,18 +76,14 @@ body{
 
   width:180px;
   height:1px;
-
   background:#d9b26f;
-
   margin:2rem auto;
 }
 
 .hero-date{
 
   font-size:1.3rem;
-
   letter-spacing:2px;
-
   margin-bottom:2rem;
 }
 
@@ -103,28 +92,19 @@ body{
 .countdown{
 
   display:flex;
-
   justify-content:center;
-
   gap:1rem;
-
   flex-wrap:wrap;
-
   margin-bottom:2.5rem;
 }
 
 .time-box{
 
   min-width:90px;
-
   padding:1rem;
-
   border-radius:16px;
-
   background:rgba(255,255,255,.10);
-
   backdrop-filter:blur(10px);
-
   border:1px solid rgba(255,255,255,.15);
 }
 
@@ -132,18 +112,14 @@ body{
 
   font-size:2rem;
   font-weight:700;
-
   display:block;
 }
 
 .time-box p{
 
   margin-top:.4rem;
-
   text-transform:uppercase;
-
   letter-spacing:2px;
-
   font-size:.75rem;
 }
 
@@ -153,34 +129,25 @@ body{
 .btn-outline{
 
   display:inline-flex;
-
   align-items:center;
   justify-content:center;
-
   text-decoration:none;
-
   min-width:240px;
-
   padding:1rem 2rem;
-
   border-radius:999px;
-
   transition:.3s;
 }
 
 .btn-gold{
 
   background:#d9b26f;
-
   color:#06184d;
-
   font-weight:700;
 }
 
 .btn-gold:hover{
 
   transform:translateY(-2px);
-
   opacity:.95;
 }
 
@@ -194,7 +161,6 @@ body{
 .btn-outline:hover{
 
   background:#d9b26f;
-
   color:#06184d;
 }
 
@@ -203,17 +169,11 @@ body{
 .scroll-down{
 
   position:absolute;
-
   bottom:25px;
-
   left:50%;
-
   transform:translateX(-50%);
-
   color:white;
-
   text-decoration:none;
-
   font-size:2rem;
 }
 
@@ -222,7 +182,6 @@ body{
 .section{
 
   padding:6rem 1.5rem;
-
   text-align:center;
 }
 
@@ -234,18 +193,14 @@ body{
 .section-light{
 
   background:#faf7f0;
-
   color:#10214c;
 }
 
 .section-title{
 
   font-family:'Dancing Script',cursive;
-
   font-size:clamp(2.5rem,6vw,4rem);
-
   color:#d9b26f;
-
   margin-bottom:2rem;
 }
 
@@ -254,39 +209,30 @@ body{
 .cards{
 
   display:grid;
-
   grid-template-columns:
     repeat(auto-fit,minmax(220px,1fr));
-
   gap:1.5rem;
-
   max-width:1200px;
-
   margin:auto;
 }
 
 .card{
 
   padding:2rem;
-
   border-radius:20px;
-
   border:1px solid rgba(217,178,111,.4);
-
   background:rgba(255,255,255,.03);
 }
 
 .icon{
 
   font-size:2rem;
-
   margin-bottom:1rem;
 }
 
 .card h3{
 
   margin-bottom:1rem;
-
   color:#d9b26f;
 }
 
@@ -295,14 +241,12 @@ body{
 .section-content{
 
   max-width:700px;
-
   margin:auto;
 }
 
 .section-content p{
 
   margin-bottom:2rem;
-
   font-size:1.1rem;
 }
 
@@ -311,15 +255,10 @@ body{
 .gift-content{
 
   max-width:1200px;
-
   margin:auto;
-
   display:flex;
-
   justify-content:space-between;
-
   align-items:center;
-
   gap:2rem;
 }
 
@@ -333,49 +272,37 @@ body{
 .confirmacao-texto{
 
   max-width:700px;
-
   margin:auto auto 2rem;
-
   line-height:1.8;
 }
 
 .form-convite{
 
   display:flex;
-
   justify-content:center;
-
   gap:1rem;
-
   flex-wrap:wrap;
 }
 
 .form-convite input{
 
   min-width:320px;
-
   padding:1rem;
-
   border-radius:999px;
-
   border:1px solid #d9b26f;
-
   background:white;
-
   font-size:1rem;
 }
 
 .form-convite button{
 
   border:none;
-
   cursor:pointer;
 }
 
 .erro{
 
   margin-top:1rem;
-
   color:#c62828;
 }
 
@@ -384,40 +311,30 @@ body{
 .footer{
 
   background:#06184d;
-
   padding:4rem 1.5rem;
-
   text-align:center;
 }
 
 .assinatura{
 
   margin-top:1rem;
-
   font-family:'Dancing Script',cursive;
-
   font-size:3rem;
-
   color:#d9b26f;
 }
 
 .footer-nav{
 
   margin-top:2rem;
-
   display:flex;
-
   justify-content:center;
-
   gap:2rem;
-
   flex-wrap:wrap;
 }
 
 .footer-nav a{
 
   color:white;
-
   text-decoration:none;
 }
 
@@ -459,13 +376,10 @@ body{
 .convite-page {
 
   min-height: 100vh;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 2rem;
-
   background:
     linear-gradient(
       rgba(0,0,0,.35),
@@ -482,26 +396,18 @@ body{
 
   width: 100%;
   max-width: 850px;
-
   padding: 3rem;
-
   text-align: center;
-
   border-radius: 30px;
-
   background: rgba(255,255,255,.06);
-
   backdrop-filter: blur(12px);
-
   border: 1px solid rgba(217,178,111,.25);
 }
 
 .page-subtitle {
 
   margin-top: 1rem;
-
   color: #d9b26f;
-
   font-size: 1.1rem;
 }
 
@@ -514,55 +420,40 @@ body{
 .card-convidado {
 
   background: rgba(255,255,255,.05);
-
   border: 1px solid rgba(217,178,111,.15);
-
   border-radius: 20px;
-
   padding: 1.5rem;
-
   margin-top: 1rem;
-
   text-align: center;
 }
 
 .card-convidado .nome {
 
   display: block;
-
   font-size: 1.2rem;
-
   font-weight: 600;
-
   margin-bottom: 1rem;
 }
 
 .info {
 
   max-width: 650px;
-
   margin: auto;
-
   line-height: 1.8;
 }
 
 .acoes {
 
   display: flex;
-
   justify-content: center;
-
   gap: 1rem;
-
   margin-top: 2rem;
-
   flex-wrap: wrap;
 }
 
 .small-text {
 
   margin-top: 2rem;
-
   opacity: .85;
 }
 
@@ -591,17 +482,11 @@ body{
 .loading-confirmacao {
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 10px;
-
   color: #d9b26f;
-
   font-weight: 600;
-
   padding: 12px;
 }
 
@@ -609,13 +494,9 @@ body{
 
   width: 18px;
   height: 18px;
-
   border: 2px solid rgba(255,255,255,.3);
-
   border-top: 2px solid #d9b26f;
-
   border-radius: 50%;
-
   animation: girar 0.8s linear infinite;
 }
 
@@ -661,10 +542,8 @@ body{
 .info-card {
   padding: 2rem;
   border-radius: 24px;
-
   background: rgba(255,255,255,.05);
   border: 1px solid rgba(217,178,111,.22);
-
   text-align: center;
 }
 
@@ -691,3 +570,202 @@ body{
   text-decoration: underline;
 }
 
+/* =========================================
+   DRESS CODE
+========================================= */
+
+.dress-page {
+
+  min-height: 100vh;
+  padding: 5rem 1.5rem;
+  background: #06184d;
+  color: white;
+  text-align: center;
+}
+
+.dress-hero {
+
+  max-width: 850px;
+  margin: 0 auto 3rem;
+}
+
+.dress-intro {
+
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  opacity: .95;
+}
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.dress-section {
+
+  margin: 4rem auto;
+  max-width: 1200px;
+}
+
+.dress-section h2 {
+
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.dress-use h2 {
+
+  color: #d9b26f;
+}
+
+.dress-avoid h2 {
+
+  color: #f4d4d4;
+}
+
+/* =========================================
+   SLIDER
+========================================= */
+
+.dress-slider {
+
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(217,178,111,.5) transparent;
+}
+
+.dress-slider::-webkit-scrollbar {
+
+  height: 8px;
+}
+
+.dress-slider::-webkit-scrollbar-thumb {
+
+  background: rgba(217,178,111,.5);
+  border-radius: 999px;
+}
+
+.dress-slider::-webkit-scrollbar-track {
+
+  background: transparent;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.dress-item {
+
+  min-width: 260px;
+  max-width: 260px;
+  scroll-snap-align: center;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(217,178,111,.25);
+  border-radius: 24px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  transition: all .25s ease;
+}
+
+.dress-item:hover {
+
+  transform: translateY(-4px);
+  border-color: rgba(217,178,111,.6);
+}
+
+.dress-item img {
+
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.dress-item h3 {
+
+  padding: 1rem;
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.dress-page .acoes {
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .dress-page {
+
+    padding: 3rem 1rem;
+  }
+
+  .dress-section {
+
+    margin: 3rem auto;
+  }
+
+  .dress-section h2 {
+
+    font-size: 1.6rem;
+  }
+
+  .dress-item {
+
+    min-width: 220px;
+    max-width: 220px;
+  }
+
+  .dress-item h3 {
+
+    font-size: .9rem;
+  }
+}
+
+/* =========================================
+   FAIXAS
+========================================= */
+
+.section-banner {
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  border-radius: 16px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.use-banner {
+
+  background: #d9b26f;
+  color: #06184d;
+}
+
+.avoid-banner {
+
+  background: #ffffff;
+  color: #06184d;
+}
