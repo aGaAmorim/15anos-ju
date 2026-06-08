@@ -187,8 +187,8 @@ body{
 .btn-outline{
 
   border:1px solid #d9b26f;
-
   color:#d9b26f;
+  margin-top: 20px;
 }
 
 .btn-outline:hover{
