@@ -1,60 +1,288 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
 
-        <title> 15 anos da Ju ✨ </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="robots" content="noindex,nofollow"/>
+    <title>Julia Amorim • 15 Anos ✨</title>
 
-        <link rel="stylesheet" href="style.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    </head>
+    <meta name="robots" content="noindex,nofollow">
 
-    <body>
-        <script src="js/countdown.js"></script>
+    <link rel="stylesheet" href="newStyle.css">
 
-        <p class="subtitle">
-            Preparem-se!
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <script src="js/countdown.js"></script>
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="sparkles">
+                ✦ ✦ ✦
+            </div>
+
+            <h1 class="titleConvite">
+                Julia Amorim
+            </h1>
+
+            <p class="hero-subtitle">
+                15 anos
+            </p>
+
+            <div class="hero-divider"></div>
+
+            <p class="hero-date">
+                11 de dezembro de 2026
+            </p>
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="dias">0</span>
+                    <p>Dias</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="horas">0</span>
+                    <p>Horas</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutos">0</span>
+                    <p>Min</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="segundos">0</span>
+                    <p>Seg</p>
+                </div>
+
+            </div>
+
+            <a href="#confirmacao" class="btn-gold">
+                Entrar no Convite ✨
+            </a>
+
+        </div>
+
+        <a href="#informacoes" class="scroll-down">
+            ↓
+        </a>
+
+    </header>
+
+    <!-- INFORMAÇÕES -->
+
+    <section id="informacoes" class="section section-dark">
+
+        <h2 class="section-title">
+            Informações ✨
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📍</div>
+                <h3>Local</h3>
+                <p>
+                    Espaço XXXXX
+                    <br>
+                    Cidade / Estado
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Data</h3>
+                <p>
+                    11 de dezembro
+                    <br>
+                    de 2026
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🕗</div>
+                <h3>Horário</h3>
+                <p>
+                    Recepção
+                    <br>
+                    às XXh
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌊</div>
+                <h3>Hospedagem</h3>
+                <p>
+                    Aproveite o final de semana
+                    no litoral.
+                </p>
+            </div>
+
+        </div>
+
+        <a href="info.html" class="btn-outline">
+            Ver todos os detalhes ✨
+        </a>
+
+    </section>
+
+    <!-- DRESS CODE -->
+
+    <section id="dresscode" class="section section-light">
+
+        <div class="section-content">
+
+            <h2 class="section-title">
+                Dress Code ✨
+            </h2>
+
+            <p>
+                Queremos todos deslumbrantes
+                para essa noite especial.
+            </p>
+
+            <a
+                href="dresscode.html"
+                class="btn-gold"
+            >
+                Ver Inspirações ✨
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PRESENTES -->
+
+    <section id="presentes" class="section section-dark">
+
+        <div class="gift-content">
+
+            <div>
+
+                <h2 class="section-title">
+                    Lista de Presentes ✨
+                </h2>
+
+                <p>
+                    A Ju preparou uma seleção especial
+                    de presentes que adoraria receber
+                    nesse momento tão especial.
+                </p>
+
+            </div>
+
+            <a
+                href="https://aniversario-ju-amorim.listaideal.com.br/pt/"
+                target="_blank"
+                class="btn-outline"
+            >
+                Acessar Lista 🎁
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- CONFIRMAÇÃO -->
+
+    <section
+        id="confirmacao"
+        class="section section-light"
+    >
+
+        <h2 class="section-title">
+            Confirme sua presença ✨
+        </h2>
+
+        <p class="confirmacao-texto">
+
+            Esta celebração foi planejada com muito carinho para um número seleto de convidados.
+
+            <br><br>
+
+            Ao informar o código recebido em seu convite,
+            você poderá visualizar todas as pessoas convidadas da sua família
+            e confirmar a presença de cada uma delas.
+
         </p>
 
-        <div class="countdown">
+        <form
+            class="form-convite"
+            onsubmit="validarCodigo(event)"
+        >
 
-            <div class="time-box">
-                <span id="dias">0</span>
-                <p>dias</p>
-            </div>
+            <input
+                type="text"
+                id="codigo"
+                name="codigo"
+                placeholder="Digite seu código"
+                required
+            >
 
-            <div class="time-box">
-                <span id="horas">0</span>
-                <p>horas</p>
-            </div>
+            <button
+                type="submit"
+                class="btn-gold"
+            >
+                Acessar ✨
+            </button>
 
-            <div class="time-box">
-                <span id="minutos">0</span>
-                <p>min</p>
-            </div>
+        </form>
 
-            <div class="time-box">
-                <span id="segundos">0</span>
-                <p>seg</p>
-            </div>
+        <p id="erro" class="erro"></p>
 
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer class="footer">
+
+        <p>
+            Mal podemos esperar para viver essa noite inesquecível com você ✨
+        </p>
+
+        <div class="assinatura">
+            Ju
         </div>
 
-        <div class="meuConvite">
-            <a href="convite.html" class="time-box btn-convite">
-                 Acessar meu convite com código ✨
-            </a>
-            <a href="https://aniversario-ju-amorim.listaideal.com.br/pt/" target="_blank" class="time-box btn-convite">
-                 Lista de Presentes ✨
-            </a>
-            <a href="info.html" class="time-box btn-convite">
-                 Informações ✨
-            </a>
-        </div>
-        
-    </body>
+        <nav class="footer-nav">
 
+            <a href="#informacoes">
+                Informações
+            </a>
+
+            <a href="#dresscode">
+                Dress Code
+            </a>
+
+            <a href="#presentes">
+                Presentes
+            </a>
+
+            <a href="#confirmacao">
+                Confirmação
+            </a>
+
+        </nav>
+
+    </footer>
+
+    <script src="js/convite.js"></script>
+
+</body>
 </html>
