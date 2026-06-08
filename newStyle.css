@@ -452,72 +452,143 @@ body{
 
 }
 
-.convite-page{
+.convite-page {
 
-  min-height:100vh;
+min-height: 100vh;
 
-  display:flex;
+display: flex;
+align-items: center;
+justify-content: center;
 
-  align-items:center;
+padding: 2rem;
 
-  justify-content:center;
+background:
+linear-gradient(
+rgba(0,0,0,.35),
+rgba(0,0,0,.55)
+),
+url("assets/images/hero-desktop.webp");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
-.convite-card{
+.convite-card {
 
-  width:100%;
-  max-width:800px;
+width: 100%;
+max-width: 850px;
 
-  text-align:center;
+padding: 3rem;
 
-  padding:3rem;
+text-align: center;
 
-  border-radius:30px;
+border-radius: 30px;
 
-  background:rgba(255,255,255,.05);
+background: rgba(255,255,255,.06);
 
-  backdrop-filter:blur(12px);
+backdrop-filter: blur(12px);
 
-  border:1px solid rgba(217,178,111,.25);
+border: 1px solid rgba(217,178,111,.25);
 }
 
-.convite-texto{
+.convite-card .countdown {
 
-  max-width:650px;
-
-  margin:2rem auto;
-
-  line-height:1.8;
+margin-top: 2rem;
+margin-bottom: 2rem;
 }
 
-.form-convite{
+.info {
 
-  margin-top:2rem;
+max-width: 650px;
 
-  display:flex;
+margin: auto;
 
-  flex-direction:column;
+line-height: 1.9;
 
-  align-items:center;
-
-  gap:1rem;
+text-align: center;
 }
 
-.form-convite input{
+.info p {
 
-  width:100%;
-  max-width:450px;
+margin-bottom: 1rem;
 }
 
-.acoes{
+.form-convite {
 
-  display:flex;
+margin-top: 2rem;
 
-  justify-content:center;
+display: flex;
 
-  gap:1rem;
+flex-direction: column;
 
-  margin-top:2rem;
+align-items: center;
 
-  flex-wrap:wrap;
+gap: 1rem;
+}
+
+.form-convite input {
+
+width: 100%;
+max-width: 450px;
+
+padding: 1rem;
+
+border-radius: 999px;
+
+border: 1px solid #d9b26f;
+
+font-size: 1rem;
+}
+
+.acoes {
+
+display: flex;
+
+justify-content: center;
+
+gap: 1rem;
+
+margin-top: 2rem;
+
+flex-wrap: wrap;
+}
+
+.small-text {
+
+margin-top: 2rem;
+
+opacity: .85;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.convite-page {
+
+background:
+  linear-gradient(
+    rgba(0,0,0,.35),
+    rgba(0,0,0,.55)
+  ),
+  url("assets/images/hero-mobile.webp");
+
+background-size: cover;
+background-position: center;
+
+}
+
+.convite-card {
+
+padding: 2rem 1.5rem;
+
+}
+
+.form-convite input {
+
+max-width: 100%;
+
+}
+
 }
