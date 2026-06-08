@@ -116,6 +116,15 @@ function renderizarConvidados(convidados) {
 
 async function enviar(id, status) {
 
+  const acoes = card.querySelector(".acoes");
+
+    acoes.innerHTML = `
+      <div class="loading-confirmacao">
+          <span class="spinner"></span>
+          Salvando confirmação...
+      </div>
+    `;
+
   try {
 
     const response =
