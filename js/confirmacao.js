@@ -118,20 +118,10 @@ async function enviar(id, status) {
 
   try {
 
-    const response = await fetch(
-      API_URL,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type":
-            "application/json"
-        },
-        body: JSON.stringify({
-          id: id,
-          status: status
-        })
-      }
-    );
+    const response =
+      await fetch(
+        `${API_URL}?action=confirmar&id=${id}&status=${encodeURIComponent(status)}`
+      );
 
     const data =
       await response.json();
@@ -155,4 +145,6 @@ async function enviar(id, status) {
       "Erro ao salvar confirmação."
     );
   }
+}
+
 }
