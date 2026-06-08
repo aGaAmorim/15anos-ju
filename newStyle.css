@@ -452,3 +452,139 @@ body{
 
 }
 
+/* =========================================
+   PÁGINA DE CONFIRMAÇÃO
+========================================= */
+
+.convite-page {
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.35),
+      rgba(0,0,0,.55)
+    ),
+    url("assets/images/hero-desktop.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.convite-card {
+
+  width: 100%;
+  max-width: 850px;
+
+  padding: 3rem;
+
+  text-align: center;
+
+  border-radius: 30px;
+
+  background: rgba(255,255,255,.06);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(217,178,111,.25);
+}
+
+.page-subtitle {
+
+  margin-top: 1rem;
+
+  color: #d9b26f;
+
+  font-size: 1.1rem;
+}
+
+.convite-card .countdown {
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-convidado {
+
+  background: rgba(255,255,255,.05);
+
+  border: 1px solid rgba(217,178,111,.15);
+
+  border-radius: 20px;
+
+  padding: 1.5rem;
+
+  margin-top: 1rem;
+
+  text-align: center;
+}
+
+.card-convidado .nome {
+
+  display: block;
+
+  font-size: 1.2rem;
+
+  font-weight: 600;
+
+  margin-bottom: 1rem;
+}
+
+.info {
+
+  max-width: 650px;
+
+  margin: auto;
+
+  line-height: 1.8;
+}
+
+.acoes {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+
+  flex-wrap: wrap;
+}
+
+.small-text {
+
+  margin-top: 2rem;
+
+  opacity: .85;
+}
+
+@media (max-width:768px){
+
+  .convite-page {
+
+    background:
+      linear-gradient(
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.55)
+      ),
+      url("assets/images/hero-mobile.webp");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  .convite-card {
+
+    padding: 2rem 1.5rem;
+  }
+
+}
+
