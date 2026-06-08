@@ -1,5 +1,5 @@
 const API_URL =
-  'https://script.google.com/macros/s/AKfycbw3CbALrF6YwnXNiHs-UCnZzZeCbDFi9aihl7y4F6irkD7b9A7ctrsb2Yy8HVNaLAi7/exec';
+  "https://script.google.com/macros/s/AKfycbw3CbALrF6YwnXNiHs-UCnZzZeCbDFi9aihl7y4F6irkD7b9A7ctrsb2Yy8HVNaLAi7/exec";
 
 async function validarCodigo(event) {
   event.preventDefault();
@@ -43,7 +43,6 @@ async function validarCodigo(event) {
     mostrarErro(
       "Erro ao consultar convite 😕"
     );
-
   }
 }
 
