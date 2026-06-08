@@ -1,94 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
 
-        <title>Acesse seu convite ✨</title>
-        <!-- Evita indexação -->
-        <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="style.css" /> 
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    </head>
+    <title>Acesse seu convite ✨</title>
 
-    <body>
-        <script src="js/countdown.js"></script>
-        <!-->
-        <p class="subtitle">
-            Preparem-se!
-        </p>
-        <-->
+    <meta name="robots" content="noindex,nofollow">
 
-        <div class="countdown">
+    <link rel="stylesheet" href="newStyle.css">
 
-            <div class="time-box">
-                <span id="dias">0</span>
-                <p>dias</p>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+    <script src="js/countdown.js"></script>
+
+    <section class="section section-dark convite-page">
+
+        <div class="convite-card">
+
+            <div class="sparkles">
+                ✦ ✦ ✦
             </div>
 
-            <div class="time-box">
-                <span id="horas">0</span>
-                <p>horas</p>
-            </div>
+            <h1 class="titleConvite">
+                Convite Especial
+            </h1>
 
-            <div class="time-box">
-                <span id="minutos">0</span>
-                <p>min</p>
-            </div>
+            <div class="hero-divider"></div>
 
-            <div class="time-box">
-                <span id="segundos">0</span>
-                <p>seg</p>
-            </div>
+            <div class="countdown">
 
-        </div>
-        
-        <main class="container">
-            <section class="overlay overlay-box">
-
-                <h2 class="titleConvite"> Convite especial ✨</h2>
-
-                <div class="info">
-                    <p> Esta celebração foi planejada com muito carinho para um número seleto de convidados ✨ </p>
-                    <p> Ao inserir o código recebido em seu convite, será possível visualizar todas as pessoas convidadas da sua família — ou identificar se este é um convite individual. </p>
-                    <p> Pedimos que a presença de cada convidado seja confirmada individualmente. Caso alguém não possa comparecer, selecione a opção “Não”, permitindo que a família destine esse convite a outra pessoa especial 💫</p>
+                <div class="time-box">
+                    <span id="dias">0</span>
+                    <p>Dias</p>
                 </div>
 
-                <p class="small-text">
-                    E lembre-se: convidado não convida ✨
-                </p>
+                <div class="time-box">
+                    <span id="horas">0</span>
+                    <p>Horas</p>
+                </div>
 
-                <form class="form-convite" onsubmit="validarCodigo(event)">
-                    <label for="codigo"> Código do convite </label>
+                <div class="time-box">
+                    <span id="minutos">0</span>
+                    <p>Min</p>
+                </div>
 
-                    <div class="input-busca">
-                      <input
-                        class="time-box btn-convite"
-                        type="text"
-                        id="codigo"
-                        name="codigo"
-                        placeholder="Ex: JU-FAM-001"
-                        required
-                      />
-                      <button type="submit" class="btn-lupa">OK</button>
-                    </div>
+                <div class="time-box">
+                    <span id="segundos">0</span>
+                    <p>Seg</p>
+                </div>
 
-                    <p id="erro" class="erro"></p>
-                    
-                    <div class="acoes">
-                      <a href="index.html" class="btn-input">Voltar</a>
-                      <a href="listaPresentes.html" class="btn-input">Presentes 🎁 </a>
-                    </div>
-                </form>
+            </div>
 
-                <p class="small-text">
-                    Caso tenha recebido este convite mas não possua o código, entre em contato com a família da Ju. 
-                    E lembre-se: convidado não convida!
-                </p>
-               
-            </section>
-        </main>
-        <script src="js/convite.js"></script>
-    </body>
+            <p class="convite-texto">
+
+                Esta celebração foi planejada com muito carinho para pessoas que fazem parte da história da Ju.
+
+                <br><br>
+
+                Ao informar o código recebido em seu convite, você poderá visualizar todos os convidados da sua família e confirmar a presença de cada um deles.
+
+            </p>
+
+            <p class="small-text">
+
+                Caso algum convidado não possa comparecer, pedimos a gentileza de informar para que possamos reorganizar a lista de convidados.
+
+            </p>
+
+            <form
+                class="form-convite"
+                onsubmit="validarCodigo(event)"
+            >
+
+                <input
+                    type="text"
+                    id="codigo"
+                    name="codigo"
+                    placeholder="Digite seu código"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="btn-gold"
+                >
+                    Acessar Convite ✨
+                </button>
+
+                <p id="erro" class="erro"></p>
+
+            </form>
+
+            <div class="acoes">
+
+                <a
+                    href="index.html"
+                    class="btn-outline"
+                >
+                    Voltar
+                </a>
+
+                <a
+                    href="listaPresentes.html"
+                    class="btn-outline"
+                >
+                    Presentes 🎁
+                </a>
+
+            </div>
+
+            <p class="small-text">
+
+                E lembre-se: convidado não convida. ✨
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <script src="js/convite.js"></script>
+
+</body>
 </html>
