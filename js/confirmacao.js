@@ -1,79 +1,158 @@
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycby4NarO7bCPakroVlc-Bv9ErTZ_JyHevPKnwDPsdPu_XTItqFArqUAkdzPx4zK7UvTX/exec";
+const API_URL =
+  "https://script.google.com/macros/s/AKfycbw3CbALrF6YwnXNiHs-UCnZzZeCbDFi9aihl7y4F6irkD7b9A7ctrsb2Yy8HVNaLAi7/exec";
 
 const codigo = localStorage.getItem("codigoConvite");
-const dados = convites[codigo];
 
-if (!dados) {
+if (!codigo) {
   window.location.href = "convite.html";
 }
 
-document.getElementById("familia").innerText = dados.familia;
+carregarConvidados();
 
-const container = document.getElementById("lista-convidados");
+async function carregarConvidados() {
+  try {
+    const response = await fetch(
+      `${API_URL}?action=buscar&codigo=${encodeURIComponent(codigo)}`
+    );
 
-dados.convidados.forEach(nome => {
-  const card = document.createElement("div");
-  card.className = "card-convidado";
+    const data = await response.json();
 
-  const chave = `resposta_${codigo}_${nome}`;
-  const respostaSalva = localStorage.getItem(chave);
+    if (!data.success) {
+      window.location.href = "convite.html";
+      return;
+    }
 
-  if (respostaSalva) {
-    // já respondeu
-    card.innerHTML = `
-      <span class="nome">${nome}</span>
-      <span class="status">
-        ${respostaSalva === "Confirmado"
-          ? "Confirmado 💙"
-          : "Não poderá comparecer 🤍"}
-      </span>
-    `;
-  } else {
-    // ainda não respondeu
-    card.innerHTML = `
-      <span class="nome">${nome}</span>
+    document.getElementById("familia").innerText = data.familia;
 
-      <div class="acoes">
-        <button class="btn-confirmar">Eu vou</button>
-        <button class="btn-recusar">Não vou</button>
-      </div>
-    `;
+    renderizarConvidados(data.convidados);
 
-    const btnConfirmar = card.querySelector(".btn-confirmar");
-    const btnRecusar = card.querySelector(".btn-recusar");
-
-    btnConfirmar.onclick = () => enviar(nome, "Confirmado", card);
-    btnRecusar.onclick = () => enviar(nome, "Não vai", card);
+  } catch (error) {
+    console.error(error);
+    alert("Erro ao carregar convidados.");
   }
+}
 
-  container.appendChild(card);
-});
+function renderizarConvidados(convidados) {
+  const container =
+    document.getElementById("lista-convidados");
 
+  container.innerHTML = "";
 
-function enviar(nome, resposta, card) {
-  const chave = `resposta_${codigo}_${nome}`;
+  convidados.forEach(convidado => {
 
-  // trava imediatamente (anti duplo clique)
-  card.querySelector(".acoes").innerHTML =
-    `<span class="status">Salvando...</span>`;
+    const card =
+      document.createElement("div");
 
-  fetch(SCRIPT_URL, {
-    method: "POST",
-    mode: "no-cors",
-    body: JSON.stringify({
-      codigo: codigo,
-      familia: dados.familia,
-      convidado: nome,
-      resposta: resposta
-    })
+    card.className =
+      "card-convidado";
+
+    if (convidado.status === "Recusado") {
+
+      card.innerHTML = `
+        <span class="nome">
+          ${convidado.nome}
+        </span>
+
+        <span class="status">
+          Não poderá comparecer 🤍
+        </span>
+      `;
+
+    } else if (convidado.status === "Confirmado") {
+
+      card.innerHTML = `
+        <span class="nome">
+          ${convidado.nome}
+        </span>
+
+        <span class="status">
+          Confirmado 💙
+        </span>
+
+        <div class="acoes">
+          <button class="btn-recusar">
+            Não vou mais
+          </button>
+        </div>
+      `;
+
+      card
+        .querySelector(".btn-recusar")
+        .onclick = () =>
+          enviar(convidado.id, "Recusado");
+
+    } else {
+
+      card.innerHTML = `
+        <span class="nome">
+          ${convidado.nome}
+        </span>
+
+        <div class="acoes">
+          <button class="btn-confirmar">
+            Eu vou
+          </button>
+
+          <button class="btn-recusar">
+            Não vou
+          </button>
+        </div>
+      `;
+
+      card
+        .querySelector(".btn-confirmar")
+        .onclick = () =>
+          enviar(convidado.id, "Confirmado");
+
+      card
+        .querySelector(".btn-recusar")
+        .onclick = () =>
+          enviar(convidado.id, "Recusado");
+    }
+
+    container.appendChild(card);
   });
+}
 
-  // salva localmente
-  localStorage.setItem(chave, resposta);
+async function enviar(id, status) {
 
-  // feedback final
-  card.querySelector(".status").innerText =
-    resposta === "Confirmado"
-      ? "Confirmado 💙"
-      : "Não poderá comparecer 🤍";
+  try {
+
+    const response = await fetch(
+      API_URL,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type":
+            "application/json"
+        },
+        body: JSON.stringify({
+          id: id,
+          status: status
+        })
+      }
+    );
+
+    const data =
+      await response.json();
+
+    if (!data.success) {
+
+      alert(
+        data.message
+      );
+
+      return;
+    }
+
+    carregarConvidados();
+
+  } catch (error) {
+
+    console.error(error);
+
+    alert(
+      "Erro ao salvar confirmação."
+    );
+  }
 }
