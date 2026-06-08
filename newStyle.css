@@ -631,3 +631,63 @@ body{
 
 }
 
+/* =========================================
+   PÁGINA DE INFORMAÇÕES
+========================================= */
+
+.info-page {
+  min-height: 100vh;
+  padding: 5rem 1.5rem;
+  background: #06184d;
+  color: white;
+  text-align: center;
+}
+
+.info-hero {
+  max-width: 850px;
+  margin: 0 auto 3rem;
+}
+
+.info-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+  gap: 1.5rem;
+}
+
+.info-card {
+  padding: 2rem;
+  border-radius: 24px;
+
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(217,178,111,.22);
+
+  text-align: center;
+}
+
+.info-card h3 {
+  color: #d9b26f;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.info-card p {
+  line-height: 1.7;
+  font-size: .95rem;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #d9b26f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
