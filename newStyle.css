@@ -1,217 +1,453 @@
 /* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-/* BODY */
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #ffffff;
-  min-height: 100vh;
-
-  background-image: url("assets/images/mobile.webp");
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
+html{
+  scroll-behavior:smooth;
 }
 
-/* DESKTOP BACKGROUND */
-@media (min-width: 1024px) {
-  body {
-    background-image: url("assets/images/desktop.webp");
-    background-position: center center;
-    background-size: cover;
-  }
+body{
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  color:#fff;
+  background:#06184d;
+  overflow-x:hidden;
 }
 
 /* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  padding: 1rem;
+
+.hero{
+  min-height:100vh;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.25),
+      rgba(0,0,0,.45)
+    ),
+    url("assets/images/hero-desktop.webp");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  position:relative;
+
+  text-align:center;
+
+  padding:2rem;
 }
 
-.hero-content h1.titleConvite {
-  font-family: 'Dancing Script', cursive;
-  font-size: clamp(2rem, 6vw, 4rem);
-  letter-spacing: 1px;
-  text-shadow: 0 0 6px rgba(255,255,255,0.5), 0 0 12px rgba(255,255,255,0.3);
+.hero-content{
+  max-width:900px;
+  z-index:2;
 }
 
-.hero-subtitle {
-  font-family: 'Dancing Script', cursive;
-  font-size: clamp(1.2rem, 4vw, 2rem);
-  margin-top: 0.5rem;
-  text-shadow: 0 0 6px rgba(255,255,255,0.5);
+.sparkles{
+  color:#d9b26f;
+  font-size:1.5rem;
+  margin-bottom:1rem;
 }
 
-.hero-date {
-  font-size: 1rem;
-  margin-top: 0.25rem;
-  opacity: 0.9;
+.titleConvite{
+
+  font-family:'Dancing Script',cursive;
+
+  font-size:clamp(4rem,9vw,8rem);
+
+  font-weight:500;
+
+  color:#f4d28c;
+
+  line-height:1;
 }
 
-/* COUNTDOWN */
-.countdown {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 1.5rem;
-  flex-wrap: wrap;
+.hero-subtitle{
+
+  margin-top:1rem;
+
+  text-transform:uppercase;
+
+  letter-spacing:8px;
+
+  font-size:1.3rem;
 }
 
-.time-box {
-  background: rgba(0 0 0 / 10%);
-  padding: 8px;
-  border-radius: 12px;
-  min-width: 60px;
-  text-align: center;
-  backdrop-filter: blur(4px);
+.hero-divider{
+
+  width:180px;
+  height:1px;
+
+  background:#d9b26f;
+
+  margin:2rem auto;
 }
 
-.time-box span {
-  font-size: 18px;
-  font-weight: bold;
-  display: block;
+.hero-date{
+
+  font-size:1.3rem;
+
+  letter-spacing:2px;
+
+  margin-bottom:2rem;
 }
 
-.time-box p {
-  margin: 0;
-  font-size: 10px;
-  opacity: 0.7;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+/* CONTADOR */
+
+.countdown{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:1rem;
+
+  flex-wrap:wrap;
+
+  margin-bottom:2.5rem;
 }
 
-/* BTN PRIMARY */
-.btn-primary {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 1rem 2rem;
-  border-radius: 14px;
-  background: rgba(255,255,255,0.18);
-  backdrop-filter: blur(6px);
-  color: white;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.2s ease;
+.time-box{
+
+  min-width:90px;
+
+  padding:1rem;
+
+  border-radius:16px;
+
+  background:rgba(255,255,255,.10);
+
+  backdrop-filter:blur(10px);
+
+  border:1px solid rgba(255,255,255,.15);
 }
 
-.btn-primary:hover {
-  transform: scale(1.02);
-  background: rgba(255,255,255,0.28);
+.time-box span{
+
+  font-size:2rem;
+  font-weight:700;
+
+  display:block;
 }
 
-/* SECTIONS */
-.section {
-  padding: 3rem 1.5rem;
-  max-width: 720px;
-  margin: auto;
-  text-align: center;
+.time-box p{
+
+  margin-top:.4rem;
+
+  text-transform:uppercase;
+
+  letter-spacing:2px;
+
+  font-size:.75rem;
 }
 
-/* CARDS DE INFORMAÇÃO */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1.5rem;
+/* BOTÕES */
+
+.btn-gold,
+.btn-outline{
+
+  display:inline-flex;
+
+  align-items:center;
+  justify-content:center;
+
+  text-decoration:none;
+
+  min-width:240px;
+
+  padding:1rem 2rem;
+
+  border-radius:999px;
+
+  transition:.3s;
 }
 
-.card {
-  background: rgba(10, 15, 40, 0.25);
-  backdrop-filter: blur(4px);
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.12);
-  padding: 1rem;
-  flex: 1 1 250px;
-  max-width: 300px;
-  text-align: left;
+.btn-gold{
+
+  background:#d9b26f;
+
+  color:#06184d;
+
+  font-weight:700;
 }
 
-.card h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+.btn-gold:hover{
+
+  transform:translateY(-2px);
+
+  opacity:.95;
 }
 
-.card p {
-  font-size: 0.95rem;
-  line-height: 1.4;
+.btn-outline{
+
+  border:1px solid #d9b26f;
+
+  color:#d9b26f;
 }
 
-/* FORM DE CONFIRMAÇÃO */
-.form-convite {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
+.btn-outline:hover{
+
+  background:#d9b26f;
+
+  color:#06184d;
 }
 
-.form-convite input {
-  width: 100%;
-  max-width: 320px;
-  padding: 0.9rem;
-  border-radius: 12px;
-  border: none;
-  font-size: 1rem;
-  background: rgba(10,15,40,0.15);
-  color: white;
-  backdrop-filter: blur(4px);
+/* SETA */
+
+.scroll-down{
+
+  position:absolute;
+
+  bottom:25px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  color:white;
+
+  text-decoration:none;
+
+  font-size:2rem;
 }
 
-.form-convite input::placeholder {
-  color: #ffffffcc;
+/* SEÇÕES */
+
+.section{
+
+  padding:6rem 1.5rem;
+
+  text-align:center;
 }
 
-.form-convite button {
-  width: 100%;
-  max-width: 320px;
+.section-dark{
+
+  background:#06184d;
 }
 
-/* ERRO */
-.erro {
-  color: #ffb3b3;
-  font-size: 0.9rem;
+.section-light{
+
+  background:#faf7f0;
+
+  color:#10214c;
 }
 
-/* RODAPÉ */
-footer {
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.85rem;
-  opacity: 0.85;
-  color: #ffffffcc;
+.section-title{
+
+  font-family:'Dancing Script',cursive;
+
+  font-size:clamp(2.5rem,6vw,4rem);
+
+  color:#d9b26f;
+
+  margin-bottom:2rem;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-  .hero-content h1.titleConvite {
-    font-size: 2.5rem;
+/* CARDS */
+
+.cards{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+  gap:1.5rem;
+
+  max-width:1200px;
+
+  margin:auto;
+}
+
+.card{
+
+  padding:2rem;
+
+  border-radius:20px;
+
+  border:1px solid rgba(217,178,111,.4);
+
+  background:rgba(255,255,255,.03);
+}
+
+.icon{
+
+  font-size:2rem;
+
+  margin-bottom:1rem;
+}
+
+.card h3{
+
+  margin-bottom:1rem;
+
+  color:#d9b26f;
+}
+
+/* DRESS */
+
+.section-content{
+
+  max-width:700px;
+
+  margin:auto;
+}
+
+.section-content p{
+
+  margin-bottom:2rem;
+
+  font-size:1.1rem;
+}
+
+/* PRESENTES */
+
+.gift-content{
+
+  max-width:1200px;
+
+  margin:auto;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  gap:2rem;
+}
+
+.gift-content p{
+
+  max-width:500px;
+}
+
+/* CONFIRMAÇÃO */
+
+.confirmacao-texto{
+
+  max-width:700px;
+
+  margin:auto auto 2rem;
+
+  line-height:1.8;
+}
+
+.form-convite{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:1rem;
+
+  flex-wrap:wrap;
+}
+
+.form-convite input{
+
+  min-width:320px;
+
+  padding:1rem;
+
+  border-radius:999px;
+
+  border:1px solid #d9b26f;
+
+  background:white;
+
+  font-size:1rem;
+}
+
+.form-convite button{
+
+  border:none;
+
+  cursor:pointer;
+}
+
+.erro{
+
+  margin-top:1rem;
+
+  color:#c62828;
+}
+
+/* FOOTER */
+
+.footer{
+
+  background:#06184d;
+
+  padding:4rem 1.5rem;
+
+  text-align:center;
+}
+
+.assinatura{
+
+  margin-top:1rem;
+
+  font-family:'Dancing Script',cursive;
+
+  font-size:3rem;
+
+  color:#d9b26f;
+}
+
+.footer-nav{
+
+  margin-top:2rem;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:2rem;
+
+  flex-wrap:wrap;
+}
+
+.footer-nav a{
+
+  color:white;
+
+  text-decoration:none;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+  .hero{
+
+    background:
+      linear-gradient(
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.45)
+      ),
+      url("assets/images/hero-mobile.webp");
+
+    background-size:cover;
+    background-position:center;
   }
 
-  .hero-subtitle {
-    font-size: 1.5rem;
+  .titleConvite{
+    font-size:4rem;
   }
 
-  .hero-date {
-    font-size: 1rem;
+  .gift-content{
+    flex-direction:column;
   }
 
-  .section {
-    padding: 2rem 1rem;
+  .form-convite input{
+    min-width:100%;
   }
 
-  .card {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
 }
