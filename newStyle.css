@@ -769,3 +769,23 @@ body{
   background: #ffffff;
   color: #06184d;
 }
+
+.social-links {
+
+  margin: 1rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+
+  color: #d9b26f;
+  font-size: 1.8rem;
+  transition: .2s ease;
+}
+
+.social-links a:hover {
+
+  transform: translateY(-2px);
+  color: white;
+}
