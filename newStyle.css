@@ -798,3 +798,210 @@ body{
   transform: translateY(-2px);
   color: white;
 }
+
+/* =========================================
+   SOBRE A JU
+========================================= */
+
+.sobre-hero {
+
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background:
+    linear-gradient(
+      rgba(6,24,77,.55),
+      rgba(6,24,77,.75)
+    ),
+    url("assets/images/hero/hero-desktop.webp");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.sobre-overlay {
+
+  position: absolute;
+  inset: 0;
+}
+
+.sobre-hero-content {
+
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.sobre-hero .titleConvite {
+
+  font-size: clamp(3rem, 8vw, 5rem);
+}
+
+.sobre-hero .page-subtitle {
+
+  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+  color: rgba(255,255,255,.9);
+}
+
+/* =========================================
+   BOTÃO DOURADO
+========================================= */
+
+.btn-gold {
+
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #06184d;
+  background: linear-gradient(
+    135deg,
+    #d9b26f,
+    #f0d7a0
+  );
+
+  transition: .25s ease;
+}
+
+.btn-gold:hover {
+
+  transform: translateY(-3px);
+}
+
+/* =========================================
+   SEÇÕES
+========================================= */
+
+.sobre-section {
+
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.sobre-dark {
+
+  background: #06184d;
+  color: white;
+}
+
+.sobre-light {
+
+  background: #faf7f0;
+  color: #06184d;
+}
+
+.section-title {
+
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #d9b26f;
+  font-family: 'Dancing Script', cursive;
+}
+
+.sobre-texto {
+
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 2;
+  font-size: 1.05rem;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.sobre-cards {
+
+  max-width: 1100px;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.sobre-card {
+
+  padding: 2rem;
+  border-radius: 24px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(217,178,111,.25);
+  backdrop-filter: blur(10px);
+  transition: .25s ease;
+}
+
+.sobre-light .sobre-card {
+
+  background: white;
+}
+
+.sobre-card:hover {
+
+  transform: translateY(-4px);
+}
+
+.sobre-card i {
+
+  font-size: 2rem;
+  color: #d9b26f;
+  margin-bottom: 1rem;
+}
+
+.sobre-card h3 {
+
+  margin-bottom: .75rem;
+}
+
+.sobre-card p {
+
+  opacity: .9;
+  line-height: 1.6;
+}
+
+/* =========================================
+   ASSINATURA
+========================================= */
+
+.sobre-section .assinatura {
+
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #d9b26f;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .sobre-hero {
+
+    background:
+      linear-gradient(
+        rgba(6,24,77,.55),
+        rgba(6,24,77,.75)
+      ),
+      url("assets/images/hero/hero-mobile.webp");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-title {
+
+    font-size: 2rem;
+  }
+
+  .sobre-texto {
+
+    font-size: .95rem;
+    line-height: 1.8;
+  }
+}
