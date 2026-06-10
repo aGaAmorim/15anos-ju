@@ -12,10 +12,10 @@ carregarConvidados();
 async function carregarConvidados() {
 
   const loading = document.getElementById("loading-convidados");
-  const lista = document.getElementById("lista-convidados");
+  const conteudo = document.getElementById("conteudo-convite");
 
   loading.style.display = "flex";
-  lista.style.display = "none";
+  conteudo.style.display = "none";
 
   try {
     const response = await fetch(
@@ -34,7 +34,7 @@ async function carregarConvidados() {
     renderizarConvidados(data.convidados);
 
     loading.style.display = "none";
-    lista.style.display = "block";
+    conteudo.style.display = "block";
 
   } catch (error) {
     console.error(error);

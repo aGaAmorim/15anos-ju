@@ -3,119 +3,123 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
 
-    <title>Confirmação de Presença ✨</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0" />
 
-    <meta name="robots" content="noindex,nofollow">
+    <title>
+        Confirmação ✨
+    </title>
 
-    <link rel="stylesheet" href="newStyle.css">
+    <meta
+        name="robots"
+        content="noindex,nofollow" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    <link
+        rel="stylesheet"
+        href="newStyle.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- <script src="js/countdown.js"></script> -->
+    <main class="container">
 
-    <section class="convite-page">
+        <section class="overlay overlay-box">
 
-        <div class="convite-card">
+            <!-- LOADING -->
 
-            <div class="sparkles">
-                ✦ ✦ ✦
-            </div>
+            <div
+                id="loading-convidados"
+                class="loading-convidados">
 
-            <div id="loading-convidados" class="loading-convidados">
                 <span class="spinner"></span>
+
                 Carregando seu convite...
-            </div>
-
-            <div id="lista-convidados"></div>
-
-            <h1 class="titleConvite" id="familia">
-            </h1>
-
-            <p class="page-subtitle">
-
-                Estamos muito felizes em celebrar este momento especial com vocês ✨
-
-            </p>
-
-            <div class="hero-divider"></div>
-
-            <!--
-            <div class="countdown">
-
-                <div class="time-box">
-                    <span id="dias">0</span>
-                    <p>Dias</p>
-                </div>
-
-                <div class="time-box">
-                    <span id="horas">0</span>
-                    <p>Horas</p>
-                </div>
-
-                <div class="time-box">
-                    <span id="minutos">0</span>
-                    <p>Min</p>
-                </div>
-
-                <div class="time-box">
-                    <span id="segundos">0</span>
-                    <p>Seg</p>
-                </div>
-
-            </div>
-            -->
-
-            <p class="info">
-
-                Abaixo estão os convidados vinculados a este convite.
-
-                <br><br>
-
-                Para nos ajudar na organização da festa, pedimos que a presença de cada convidado seja confirmada
-                individualmente até 30 de agosto de 2026. 💙 <br>
-                Como o evento foi cuidadosamente planejado para um número limitado de convidados, caso alguém não possa
-                comparecer, pedimos que selecione "Não vou" para que possamos estender esse convite a outra pessoa
-                querida.
-                <br>
-                E lembre-se: convidado não convida ✨
-            </p>
-
-            <div id="lista-convidados"></div>
-
-            <div class="acoes">
-
-                <a href="index.html" class="btn-outline">
-
-                    Voltar
-
-                </a>
-
-                <a href="https://aniversario-ju-amorim.listaideal.com.br/pt/" target="_blank" rel="noopener noreferrer"
-                    class="btn-outline">
-
-                    Presentes 🎁
-
-                </a>
 
             </div>
 
-            <p class="small-text">
+            <!-- CONTEÚDO -->
+
+            <div
+                id="conteudo-convite"
+                style="display:none;">
+
+                <h1
+                    class="titleConvite"
+                    id="familia">
+                </h1>
+
+                <div class="info">
+
+                    <p>
+                        Estamos muito felizes em celebrar este momento especial com vocês ✨
+                    </p>
+
+                    <p>
+                        Abaixo estão os convidados vinculados a este convite.
+                    </p>
+
+                    <p>
+                        Pedimos a gentileza de confirmar individualmente a presença de cada pessoa até
+                        <strong>30 de agosto de 2026</strong>,
+                        ajudando-nos na organização desta noite tão especial. 💙
+                    </p>
+
+                    <p>
+                        Como o evento foi planejado para um número seleto de convidados,
+                        caso alguém não possa comparecer,
+                        pedimos que selecione a opção
+                        <strong>"Não vou"</strong>
+                        para que possamos compartilhar esse convite com outra pessoa especial.
+                    </p>
+
+                </div>
+
+                <p class="small-text">
+                    E lembre-se:
+                    convidado não convida ✨
+                </p>
+
+                <div id="lista-convidados"></div>
+
+                <div class="acoes">
+
+                    <a
+                        href="index.html"
+                        class="btn-outline">
+
+                        Voltar
+
+                    </a>
+
+                    <a
+                        href="https://aniversario-ju-amorim.listaideal.com.br/pt/"
+                        target="_blank"
+                        class="btn-outline">
+
+                        Presentes 🎁
+
+                    </a>
+
+                </div>
+                
+                 <p class="small-text">
 
                 A confirmação ficará registrada automaticamente após sua escolha. ✨
 
             </p>
+            </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
     <script src="js/confirmacao.js"></script>
 
