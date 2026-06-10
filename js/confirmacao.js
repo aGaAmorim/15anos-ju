@@ -14,8 +14,10 @@ async function carregarConvidados() {
   const loading = document.getElementById("loading-convidados");
   const conteudo = document.getElementById("conteudo-convite");
 
-  loading.style.display = "flex";
-  conteudo.style.display = "none";
+  if (mostrarLoading) {
+    loading.style.display = "flex";
+    conteudo.style.display = "none";
+  }
 
   try {
     const response = await fetch(
@@ -110,15 +112,15 @@ async function enviar(id, status, card) {
 
     if (!data.success) {
       alert(data.message);
-      carregarConvidados();
+      carregarConvidados(false);
       return;
     }
 
-    carregarConvidados();
+    carregarConvidados(false);
 
   } catch (error) {
     console.error(error);
     alert("Erro ao salvar confirmação. Tente novamente.");
-    carregarConvidados();
+    carregarConvidados(false);
   }
 }
