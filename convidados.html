@@ -2,124 +2,85 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Presença ✨</title>
 
-    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,nofollow">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0" />
-
-    <title>
-        Confirmação ✨
-    </title>
-
-    <meta
-        name="robots"
-        content="noindex,nofollow" />
-
-    <link
-        rel="stylesheet"
-        href="newStyle.css" />
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+    <link rel="stylesheet" href="newStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-
 </head>
 
 <body>
 
-    <main class="container">
+    <section class="convite-page">
+        <div class="convite-card">
 
-        <section class="overlay overlay-box">
-
-            <!-- LOADING -->
-
-            <div
-                id="loading-convidados"
-                class="loading-convidados">
-
-                <span class="spinner"></span>
-
-                Carregando seu convite...
-
+            <div class="sparkles">
+                ✦ ✦ ✦
             </div>
 
-            <!-- CONTEÚDO -->
+            <div id="loading-convidados" class="loading-convidados">
+                <span class="spinner"></span>
+                Carregando seu convite ✨
+            </div>
 
-            <div
-                id="conteudo-convite"
-                style="display:none;">
+            <div id="conteudo-convite" style="display: none;">
 
-                <h1
-                    class="titleConvite"
-                    id="familia">
-                </h1>
+                <h1 class="titleConvite" id="familia"></h1>
 
-                <div class="info">
+                <p class="page-subtitle">
+                    Estamos muito felizes em celebrar este momento especial com vocês ✨
+                </p>
 
-                    <p>
-                        Estamos muito felizes em celebrar este momento especial com vocês ✨
-                    </p>
+                <div class="hero-divider"></div>
 
-                    <p>
-                        Abaixo estão os convidados vinculados a este convite.
-                    </p>
+                <p class="info">
+                    Abaixo estão os convidados vinculados a este convite.
 
-                    <p>
-                        Pedimos a gentileza de confirmar individualmente a presença de cada pessoa até
-                        <strong>30 de agosto de 2026</strong>,
-                        ajudando-nos na organização desta noite tão especial. 💙
-                    </p>
+                    <br><br>
 
-                    <p>
-                        Como o evento foi planejado para um número seleto de convidados,
-                        caso alguém não possa comparecer,
-                        pedimos que selecione a opção
-                        <strong>"Não vou"</strong>
-                        para que possamos compartilhar esse convite com outra pessoa especial.
-                    </p>
+                    Para nos ajudar na organização da festa, pedimos que a presença de cada convidado seja confirmada
+                    individualmente até <strong>30 de agosto de 2026</strong>. 💙
 
-                </div>
+                    <br><br>
 
-                <p class="small-text">
-                    E lembre-se:
-                    convidado não convida ✨
+                    Como o evento foi cuidadosamente planejado para um número limitado de convidados, caso alguém não
+                    possa
+                    comparecer, pedimos que selecione <strong>"Não vou"</strong> para que possamos estender esse convite
+                    a outra pessoa querida.
+
+                    <br><br>
+
+                    E lembre-se: convidado não convida ✨
                 </p>
 
                 <div id="lista-convidados"></div>
 
                 <div class="acoes">
 
-                    <a
-                        href="index.html"
-                        class="btn-outline">
-
+                    <a href="index.html" class="btn-outline">
                         Voltar
-
                     </a>
 
-                    <a
-                        href="https://aniversario-ju-amorim.listaideal.com.br/pt/"
-                        target="_blank"
-                        class="btn-outline">
+                    <a href="https://aniversario-ju-amorim.listaideal.com.br/pt/" target="_blank"
+                        rel="noopener noreferrer" class="btn-outline">
 
                         Presentes 🎁
-
                     </a>
 
                 </div>
-                
-                 <p class="small-text">
 
-                A confirmação ficará registrada automaticamente após sua escolha. ✨
+                <p class="small-text">
+                    A confirmação ficará registrada automaticamente após sua escolha. ✨
+                </p>
 
-            </p>
             </div>
 
-        </section>
-
-    </main>
+        </div>
+    </section>
 
     <script src="js/confirmacao.js"></script>
 
