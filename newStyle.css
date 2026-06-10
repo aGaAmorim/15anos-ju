@@ -236,6 +236,13 @@ body{
   color:#d9b26f;
 }
 
+.card-link {
+
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 /* DRESS */
 
 .section-content{
@@ -1005,3 +1012,4 @@ body{
     line-height: 1.8;
   }
 }
+
