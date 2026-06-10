@@ -9,7 +9,7 @@ if (!codigo) {
 
 carregarConvidados();
 
-async function carregarConvidados() {
+async function carregarConvidados(mostrarLoading = true) {
 
   const loading = document.getElementById("loading-convidados");
   const conteudo = document.getElementById("conteudo-convite");
