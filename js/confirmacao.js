@@ -10,6 +10,13 @@ if (!codigo) {
 carregarConvidados();
 
 async function carregarConvidados() {
+
+  const loading = document.getElementById("loading-convidados");
+  const lista = document.getElementById("lista-convidados");
+
+  loading.style.display = "flex";
+  lista.style.display = "none";
+
   try {
     const response = await fetch(
       `${API_URL}?action=buscar&codigo=${encodeURIComponent(codigo)}`
@@ -26,9 +33,12 @@ async function carregarConvidados() {
     document.getElementById("familia").innerText = data.familia;
     renderizarConvidados(data.convidados);
 
+    loading.style.display = "none";
+    lista.style.display = "block";
+
   } catch (error) {
     console.error(error);
-    alert("Erro ao carregar convidados.");
+    alert("Erro ao carregar convidados. Tente novamente");
   }
 }
 
