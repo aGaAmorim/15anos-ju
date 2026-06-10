@@ -824,7 +824,7 @@ body{
       rgba(6,24,77,.55),
       rgba(6,24,77,.75)
     ),
-    url("assets/images/hero/hero-desktop.webp");
+    url("assets/images/hero/hero-sobre-desktop.webp");
 
   background-size: cover;
   background-position: center;
@@ -996,7 +996,7 @@ body{
         rgba(6,24,77,.55),
         rgba(6,24,77,.75)
       ),
-      url("assets/images/hero/hero-mobile.webp");
+      url("assets/images/hero/hero-sobre-mobile.webp");
     background-size: cover;
     background-position: center;
   }
